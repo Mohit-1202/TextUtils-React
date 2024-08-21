@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
 
@@ -12,8 +12,8 @@ export default function Navbar(props) {
         <h1 className='hover:cursor-pointer'>{props.title}</h1>
       </div>
       <div className='options flex list-none ml-4 font-normal text-[20px]'>
-        <a className='mr-5 mt-1 hover:underline cursor-pointer' href="#" >Home</a>
-        {/* <a className='mr-5 mt-1 hover:underline cursor-pointer' href="/about">About</a> */}
+        <Link className='mr-5 mt-1 hover:underline cursor-pointer' to="/" >Home</Link>
+        <Link className='mr-5 mt-1 hover:underline cursor-pointer' to="/about">About</Link>
         {/* <li className='mr-5 mt-1 hover:underline cursor-pointer'>Contact</li> */}
       </div>
       <div className="search ml-[600px]">

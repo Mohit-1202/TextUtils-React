@@ -1,10 +1,10 @@
 import './App.css'
-// import About from './components/About'
+import About from './components/About'
 import Navbar  from './components/Navbar'
 import TextForm from './components/TextForm'
 import {useState} from 'react'
 import Alert from './components/alert'
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -86,11 +86,11 @@ function App() {
   }
   
   return (
-    // <BrowserRouter>
+    <BrowserRouter>
     <>
       <Navbar title={"TextUtils"} mode={mode} DarkMode={DarkMode} GreenMode={GreenMode} BlueMode={BlueMode} Style={Style}/>
       <Alert alert={alert} />
-          {/* <Routes>
+          <Routes>
             <Route path="/About" element={<About/>}/>
             <Route
               path="/"
@@ -102,14 +102,9 @@ function App() {
                 />
               }
             />
-          </Routes> */}
-          <TextForm
-                  showAlert={showAlert}
-                  heading="Enter the text to analyze below"
-                  mode={mode}
-                />
+          </Routes>
     </>
-    // </BrowserRouter>
+    </BrowserRouter>
   )
 }
 
