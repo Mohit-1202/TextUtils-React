@@ -86,8 +86,8 @@ function App() {
   }
   
   return (
-    <BrowserRouter>
     <>
+    <BrowserRouter>
       <Navbar title={"TextUtils"} mode={mode} DarkMode={DarkMode} GreenMode={GreenMode} BlueMode={BlueMode} Style={Style}/>
       <Alert alert={alert} />
           <Routes>
@@ -101,10 +101,10 @@ function App() {
                   mode={mode}
                 />
               }
-            />
-          </Routes>
-    </>
+              />
+              </Routes>
     </BrowserRouter>
+    </>
   )
 }
 
